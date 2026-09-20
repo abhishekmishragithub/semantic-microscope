@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semantic Microscope</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%274%27 fill=%27%23440154%27/%3E%3Crect y=%274%27 width=%2712%27 height=%274%27 fill=%27%2331688e%27/%3E%3Crect y=%278%27 width=%2714%27 height=%274%27 fill=%27%2335b779%27/%3E%3Crect y=%2712%27 width=%279%27 height=%274%27 fill=%27%23fde725%27/%3E%3C/svg%3E">
+</head>
+<body>
+<header id="topbar">
+  <span id="doc-name" class="doc">loading</span>
+  <select id="run-select" title="run" hidden></select>
+  <label class="ctl">emphasis <select id="dim-select"></select></label>
+  <label class="ctl">layout
+    <select id="layout-select">
+      <option value="lanes">lanes</option>
+      <option value="wall">wall</option>
+    </select>
+  </label>
+  <label class="ctl">ramp
+    <select id="ramp-select">
+      <option value="viridis">viridis</option>
+      <option value="magma">magma</option>
+    </select>
+  </label>
+  <span id="stats"></span>
+  <span id="legend"></span>
+</header>
+<main>
+  <section id="lanes-pane">
+    <div id="lane-labels"></div>
+    <div id="lanes-wrap">
+      <canvas id="lanes"></canvas>
+      <canvas id="lanes-overlay"></canvas>
+      <canvas id="ruler"></canvas>
+    </div>
+  </section>
+  <section id="reading-pane" tabindex="0"></section>
+  <div id="tooltip" hidden></div>
+</main>
+<footer id="status">
+  <span id="status-idx" class="dim">–</span>
+  <span id="status-text">hover a lane · keys 1–9 set emphasis</span>
+  <span id="status-vals"></span>
+</footer>
+<script src="app.js"></script>
+<script src="reading.js"></script>
+</body>
+</html>

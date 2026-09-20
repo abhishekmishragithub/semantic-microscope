@@ -1,0 +1,40 @@
+name: contract
+document_kind: commercial contract
+dimensions:
+  obligation:
+    type: noul
+    label: Creates an obligation
+    instructions: This sentence creates a binding obligation on one of the parties.
+  risk:
+    type: score
+    label: Risk / unusualness
+    instructions: How legally load-bearing and unusual is this sentence?
+    criteria:
+      - Pure boilerplate or formatting
+      - Standard market terms
+      - Materially binding
+      - Unusual or one-sided
+  ambiguous:
+    type: noul
+    label: Could be misread
+    instructions: A reasonable professional reader could interpret this sentence in two incompatible ways.
+  financial:
+    type: noul
+    label: Financial consequence
+    instructions: This sentence has a direct financial consequence for one of the parties.
+  liability:
+    type: noul
+    label: Touches liability
+    instructions: This sentence limits, excludes, caps or assigns liability.
+  clause_type:
+    type: choice
+    label: Clause type
+    instructions: Which category does this sentence most belong to?
+    criteria:
+      payment: Pricing, invoicing, fees or payment timing
+      termination: Ending, suspending or renewing the agreement
+      ip: Ownership or licensing of intellectual property
+      confidentiality: Secrecy and information handling
+      liability: Indemnity, warranty, limitation of liability
+      boilerplate: Notices, governing law, severability, headings
+      other: None of the above

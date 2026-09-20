@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">
+<rect width="720" height="720" fill="#ffffff"/>
+<text x="72" y="30" font-size="15" font-weight="600" fill="#1b1b1f">requirement · rfc9110-rfc</text>
+<text x="72" y="48" fill="#5a5a63">n = 59 human labels · Brier 0.165 (0.25 = always guessing 0.5)</text>
+<text x="72" y="66" fill="#9a9aa3" font-size="11">bars: 95% Wilson interval on the observed rate · predictions hidden while labelling</text>
+<line x1="72.0" y1="656" x2="72.0" y2="96" stroke="#d9d9d5" stroke-width="1"/>
+<line x1="72" y1="656.0" x2="692" y2="656.0" stroke="#d9d9d5" stroke-width="1"/>
+<text x="72.0" y="674" text-anchor="middle" fill="#5a5a63">0.0</text>
+<text x="62" y="660.0" text-anchor="end" fill="#5a5a63">0.0</text>
+<line x1="196.0" y1="656" x2="196.0" y2="96" stroke="#d9d9d5" stroke-width="1"/>
+<line x1="72" y1="544.0" x2="692" y2="544.0" stroke="#d9d9d5" stroke-width="1"/>
+<text x="196.0" y="674" text-anchor="middle" fill="#5a5a63">0.2</text>
+<text x="62" y="548.0" text-anchor="end" fill="#5a5a63">0.2</text>
+<line x1="320.0" y1="656" x2="320.0" y2="96" stroke="#d9d9d5" stroke-width="1"/>
+<line x1="72" y1="432.0" x2="692" y2="432.0" stroke="#d9d9d5" stroke-width="1"/>
+<text x="320.0" y="674" text-anchor="middle" fill="#5a5a63">0.4</text>
+<text x="62" y="436.0" text-anchor="end" fill="#5a5a63">0.4</text>
+<line x1="444.0" y1="656" x2="444.0" y2="96" stroke="#d9d9d5" stroke-width="1"/>
+<line x1="72" y1="320.0" x2="692" y2="320.0" stroke="#d9d9d5" stroke-width="1"/>
+<text x="444.0" y="674" text-anchor="middle" fill="#5a5a63">0.6</text>
+<text x="62" y="324.0" text-anchor="end" fill="#5a5a63">0.6</text>
+<line x1="568.0" y1="656" x2="568.0" y2="96" stroke="#d9d9d5" stroke-width="1"/>
+<line x1="72" y1="208.0" x2="692" y2="208.0" stroke="#d9d9d5" stroke-width="1"/>
+<text x="568.0" y="674" text-anchor="middle" fill="#5a5a63">0.8</text>
+<text x="62" y="212.0" text-anchor="end" fill="#5a5a63">0.8</text>
+<line x1="692.0" y1="656" x2="692.0" y2="96" stroke="#d9d9d5" stroke-width="1"/>
+<line x1="72" y1="96.0" x2="692" y2="96.0" stroke="#d9d9d5" stroke-width="1"/>
+<text x="692.0" y="674" text-anchor="middle" fill="#5a5a63">1.0</text>
+<text x="62" y="100.0" text-anchor="end" fill="#5a5a63">1.0</text>
+<line x1="72" y1="656" x2="692" y2="656" stroke="#9a9aa3"/>
+<line x1="72" y1="656" x2="72" y2="96" stroke="#9a9aa3"/>
+<text x="382.0" y="698" text-anchor="middle" fill="#1b1b1f">mean predicted probability (Jev)</text>
+<text transform="translate(22 376.0) rotate(-90)" text-anchor="middle" fill="#1b1b1f">observed rate (human yes)</text>
+<line x1="72" y1="656" x2="692" y2="96" stroke="#9a9aa3" stroke-dasharray="5 5"/>
+<text x="648.6" y="112.8" text-anchor="end" fill="#9a9aa3">perfect calibration</text>
+<text x="134.0" y="88" text-anchor="middle" fill="#9a9aa3" font-size="10">0.0–0.2</text>
+<text x="258.0" y="88" text-anchor="middle" fill="#9a9aa3" font-size="10">0.2–0.4</text>
+<text x="382.0" y="88" text-anchor="middle" fill="#9a9aa3" font-size="10">0.4–0.6</text>
+<text x="506.0" y="88" text-anchor="middle" fill="#9a9aa3" font-size="10">0.6–0.8</text>
+<text x="630.0" y="88" text-anchor="middle" fill="#9a9aa3" font-size="10">0.8–1.0</text>
+<path d="M165.0,656.0 L266.3,656.0 L359.3,609.3 L512.8,401.5 L581.9,236.0" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<line x1="165.0" y1="656.0" x2="165.0" y2="520.2" stroke="#1f5fa8" stroke-width="1" opacity="0.6"/>
+<circle cx="165.0" cy="656.0" r="4.5" fill="#ffffff" stroke="#1f5fa8" stroke-width="2"/>
+<text x="174.0" y="648.0" fill="#5a5a63" font-size="11">n=12</text>
+<line x1="266.3" y1="656.0" x2="266.3" y2="520.2" stroke="#1f5fa8" stroke-width="1" opacity="0.6"/>
+<circle cx="266.3" cy="656.0" r="4.5" fill="#ffffff" stroke="#1f5fa8" stroke-width="2"/>
+<text x="275.3" y="648.0" fill="#5a5a63" font-size="11">n=12</text>
+<line x1="359.3" y1="647.7" x2="359.3" y2="457.8" stroke="#1f5fa8" stroke-width="1" opacity="0.6"/>
+<circle cx="359.3" cy="609.3" r="4.5" fill="#ffffff" stroke="#1f5fa8" stroke-width="2"/>
+<text x="368.3" y="601.3" fill="#5a5a63" font-size="11">n=12</text>
+<line x1="512.8" y1="536.9" x2="512.8" y2="252.8" stroke="#1f5fa8" stroke-width="1" opacity="0.6"/>
+<circle cx="512.8" cy="401.5" r="4.5" fill="#ffffff" stroke="#1f5fa8" stroke-width="2"/>
+<text x="521.8" y="393.5" fill="#5a5a63" font-size="11">n=11</text>
+<line x1="581.9" y1="394.1" x2="581.9" y2="145.8" stroke="#1f5fa8" stroke-width="1" opacity="0.6"/>
+<circle cx="581.9" cy="236.0" r="4.5" fill="#ffffff" stroke="#1f5fa8" stroke-width="2"/>
+<text x="590.9" y="228.0" fill="#5a5a63" font-size="11">n=12</text>
+</svg>

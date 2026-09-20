@@ -1,0 +1,37 @@
+name: rfc
+document_kind: technical specification (IETF RFC)
+dimensions:
+  requirement:
+    type: noul
+    label: Requirement
+    instructions: Ignoring this sentence would make an implementation non-compliant.
+  normative_keyword:
+    type: noul
+    label: RFC 2119 keyword
+    instructions: "This sentence contains an RFC 2119 keyword: MUST, MUST NOT, SHALL, SHOULD, SHOULD NOT, REQUIRED, RECOMMENDED, MAY, OPTIONAL."
+  applies_to:
+    type: choice
+    label: Applies to
+    instructions: Which party does this sentence place a requirement or expectation on?
+    criteria:
+      client: A user agent or other HTTP client
+      server: An origin server or other HTTP server
+      intermediary: A proxy, gateway, cache or other intermediary
+      both: Clients and servers alike, or any participant
+      unspecified: No particular party, or not a requirement at all
+  strength:
+    type: score
+    label: Strength
+    instructions: How strongly does this sentence bind an implementation?
+    criteria:
+      - Informational only
+      - Optional or recommended
+      - Strict requirement
+  security_relevant:
+    type: noul
+    label: Security relevant
+    instructions: Getting this wrong has security consequences.
+  cross_reference:
+    type: noul
+    label: Cross-reference
+    instructions: This sentence defers to another section or document rather than stating a rule itself.

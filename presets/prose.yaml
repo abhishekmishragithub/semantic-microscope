@@ -1,0 +1,25 @@
+name: prose
+document_kind: work of narrative fiction
+dimensions:
+  tension:
+    type: score
+    label: Dramatic tension
+    instructions: How much dramatic tension is present in this sentence?
+    criteria: [Calm, Unease, Active conflict, Crisis]
+  load_bearing:
+    type: noul
+    label: Load-bearing
+    instructions: Removing this sentence would damage the reader's understanding of the plot.
+  dialogue:
+    type: noul
+    label: Dialogue
+    instructions: This sentence is spoken dialogue rather than narration.
+  sensory:
+    type: score
+    label: Sensory density
+    instructions: How much concrete sensory detail does this sentence contain?
+    criteria: [Abstract, Some imagery, Vivid and specific]
+  interiority:
+    type: noul
+    label: Interior thought
+    instructions: This sentence describes a character's internal thoughts or feelings.
