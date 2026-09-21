@@ -132,16 +132,35 @@ bucket       n   predicted   observed
 Brier score: 0.165   (lower is better; 0.25 = always guessing 0.5)
 ```
 
-What we did verify: the ordering is right (higher predicted, higher observed, monotone across all
-five buckets) and the Brier score beats guessing. What we did not: the probabilities are
-over-confident on this dimension, sitting below the diagonal in every bucket. The 12-per-bucket
-intervals are wide enough that the two ends are consistent with calibration and the middle is
-not. One labeller reading "non-compliant" as MUST-only, while Jev spreads SHOULD sentences
-across 0.2 to 0.7, explains part of the gap; that is a disagreement about the question as much
-as about the model. A second sanity check is free: `normative_keyword` is a lexical question, and
-against a regex Jev found all 413 keyword sentences (recall 1.00) and added 107 without one
-(precision 0.79 at a 0.5 threshold). None of this generalises past one document and one
-dimension. Label more, on other documents, before drawing a conclusion.
+**What holds up.** The ordering is right: higher predicted, higher observed, monotone across all
+five buckets. The Brier score beats guessing.
+
+**What doesn't.** The probabilities sit below the diagonal in every bucket. With 11 to 12 items
+per bucket the intervals are wide enough that the two ends are consistent with calibration; the
+middle is not.
+
+**Why.** Grouping every sentence by its RFC 2119 keyword shows what Jev thinks the question
+means:
+
+| keyword | n | p25 | median | p75 | share ≥ 0.5 |
+| --- | --- | --- | --- | --- | --- |
+| MUST / MUST NOT | 201 | 0.67 | 0.75 | 0.79 | 96% |
+| SHOULD / SHOULD NOT | 119 | 0.25 | 0.33 | 0.42 | 8% |
+| MAY | 104 | 0.21 | 0.27 | 0.36 | 6% |
+
+Jev reads "non-compliant" as a MUST question and separates the tiers almost cleanly. Only four
+sentences contain both a MUST and a SHOULD, so this is not an artefact of mixed sentences. But it
+puts a floor under SHOULD at a median of 0.33 rather than treating it as a no, and the labelling
+rule here scored SHOULD as a hard no per RFC 2119. That disagreement accounts for most of the
+0.2–0.4 bucket, where predicted 0.31 met observed 0.00. It is a disagreement about the question
+as much as about the model.
+
+**A free second check.** `normative_keyword` is a lexical question, so a regex is ground truth.
+Jev found all 413 keyword sentences (recall 1.00) and added 107 without one (precision 0.79 at a
+0.5 threshold), mostly lowercase "must" and "should" — the ambiguity RFC 8174 exists to resolve.
+
+None of this generalises past one document, one dimension and one labeller. Label more before
+drawing a conclusion.
 
 ## Things to know
 
