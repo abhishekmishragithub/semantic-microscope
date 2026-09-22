@@ -84,7 +84,7 @@ trip; "live" is the number of sentences that made a request.
 | ---------- | --- | ------ | ---------------- | ---- | --- | --- | --- | --- | ---- | ------ | ------------ | ---- |
 | 2026-09-19 | sample-contract (synthetic MSA) | contract | 484 (482) | 33.2s | 385ms | 506ms | 617ms | 936ms | 0 | 0 | 336,040 | $0.0141 |
 | 2026-09-19 | gdpr-contract (GDPR, EUR-Lex HTML) | contract | 1,977 (1,630) | 108.9s | 357ms | 454ms | 578ms | 1,325ms | 0 | 0 | 1,144,375 | $0.0481 |
-| 2026-09-19 | pride-and-prejudice-prose (Gutenberg #1342) | prose | 4,796 (4,658) | 310.9s | 356ms | 452ms | 555ms | 1,496ms | 0 | 0 | 2,540,710 | $0.1067 |
+| 2026-09-21 | pride-and-prejudice-prose (Gutenberg #1342, novel only) | prose | 4,533 (4,433) | 295.9s | 347ms | 439ms | 619ms | 2,006ms | 0 | 0 | 2,420,986 | $0.1017 |
 | 2026-09-20 | rfc9110-rfc (RFC 9110 HTTP Semantics) | rfc | 3,566 (3,001) | 200.6s | 356ms | 446ms | 570ms | 1,741ms | 0 | 0 | 1,965,887 | $0.0826 |
 | 2026-09-20 | frankenstein-prose (Gutenberg #84) | prose | 3,087 (2,970) | 198.8s | 410ms | 515ms | 636ms | 1,201ms | 0 | 0 | 1,592,274 | $0.0669 |
 

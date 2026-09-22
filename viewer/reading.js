@@ -47,6 +47,7 @@ function tintReading() {
   const grey = hexToRgb(cssVar("--grey-row") || "#888888");
   for (const span of spans) {
     const rec = state.records[Number(span.dataset.idx)];
+    if (!rec) continue; // spans of the previous run, until onRunLoaded rebuilds the pane
     const c = colorRgb(rec, state.dim);
     span.style.backgroundColor = c ? rgbStr(c, TINT_ALPHA) : rgbStr(grey, 0.18);
   }
